@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <style>
+        nav img {
+            position: absolute;
+            top: 0;
+            margin-top: -20px;
+            margin-left: 90px;
+        }
+
+        .NavBar {
+            background: #00a8c1;
+            height: 55px;
+            width: 100%;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+        }
+
+        .NavBar ul {
+            text-align: center;
+        }
+
+        .NavBar ul li {
+            display: inline-block;
+            line-height: 25px;
+            margin: 0 5px;
+        }
+
+        .NavBar ul li a {
+            color: white;
+            font-size: 17px;
+            padding: 7px 13px;
+            border-radius: 3px;
+            text-transform: uppercase;
+            background-color: #0a8fa3;
+            border-radius: 30px;
+            text-align: center;
+        }
+
+        .NavBar ul li a:hover {
+            background-color: #134149;
+
+        }
+
+        a.active,
+        a:hover {
+            background: #1b9bff;
+            transition: .5s;
+        }
+
+        .aa {
+
+            background-image: url(Union.png);
+            background-attachment: scroll;
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+
+            margin: 50px;
+            position: absolute;
+
+            padding: 18px;
+            height: auto;
+            width: 530px;
+            background-color: rgba(211, 211, 240, 0.85);
+            border-style: solid;
+            border-radius: 20px;
+            border-color: #00a8c1;
+            right: 21%;
+            left: 25%;
+            top: 50px;
+            font-size: large;
+            padding: 50px 60px 70px;
+            line-height: 40px;
+        }
+
+        h1 {
+            margin-top: 0px;
+            margin-left: -30px;
+        }
+
+        .btn-field {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .btn-field button {
+            flex-basis: 48%;
+            background: #1b9bff;
+            color: #fff;
+            height: 40px;
+            border-radius: 20px;
+            border: 0;
+            outline: 0;
+            cursor: pointer;
+            transition: background 1s;
+        }
+
+        .btn-field button:hover {
+            background-color: blue;
+        }
+
+
+        .copyrihgt {
+            position: absolute;
+            color: white;
+            width: 100%;
+            top: 110%;
+            right: 0px;
+            background-color: darkslategrey;
+            line-height: 3;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="NavBar">
+            <img src="logoo.png" alt="" height="95px">
+            <ul>
+                <li><a href="Home Page.html">Home</a></li>
+                <li><a href="About us.html">About us</a></li>
+                <li><a
+                        href="https://www.messenger.com/t/366261283498563/?messaging_source=source%3Apages%3Amessage_shortlink&source_id=1441792&recurring_notification=0">Contact
+                        us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="aa">
+        <form>
+            <h1 id="title">Registration form:</h1>
+
+            <div class="input-group">
+                <div class="input-field">
+                    <label for="firstname">First name:</label>
+                    <input id="firstname" type="text" required>
+                </div>
+
+                <div class="input-field">
+                    <label for="lastname">Last name:</label>
+                    <input id="lastname" type="text" required>
+                </div>
+                <div class="input-field">
+                    <label for="num">Phone number:</label>
+                    <input id="num" type="text" required>
+                </div>
+                <div class="input-field">
+                    <label for="email">E-mail:</label>
+                    <input id="email" type="email" required>
+                </div>
+                <div class="input-field">
+                    <label for="ID">National number:</label>
+                    <input id="ID" type="text" required>
+                </div>
+                <div class="input-field">
+                    <label for="BD">Birth date:</label>
+                    <input id="BD" type="date" required>
+                </div>
+
+                <div class="input-field">
+                    <label for="Gender" name="Gender">Gender: </label>
+                    <input type="radio" id="Male" name="Gender" value="Male" required>
+                    <label for="Male">Male</label>
+                    <input type="radio" id="Female" name="Gender" value="Female" required>
+                    <label for="Female">Female</label>
+                </div>
+                <label for="CV">Upload Your CV:</label>
+                <input type="file" name="CV">
+
+                <br>
+                <br>
+                <div class="btn-field">
+                    <button type="submit" id="signupBtn">Submit</button>
+                    <button type="reset" name="reset" value="reset">Reset </button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div class="copyrihgt">
+        2023 | Tanta University © HRMS Project
+    </div>
+
+</body>
+
+</html>
