@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        body {
+            background-color: lightgrey;
+
+        }
+
+        nav img {
+            position: absolute;
+            top: 0;
+            margin-top: -20px;
+            margin-left: 90px;
+        }
+
+        .NavBar {
+            background: #00a8c1;
+            height: 55px;
+            width: 100%;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+        }
+
+        .NavBar ul {
+            text-align: center;
+        }
+
+        .NavBar ul li {
+            display: inline-block;
+            line-height: 25px;
+            margin: 0 5px;
+        }
+
+        .NavBar ul li a {
+            color: white;
+            font-size: 17px;
+            padding: 7px 13px;
+            border-radius: 3px;
+            text-transform: uppercase;
+            background-color: #0a8fa3;
+            border-radius: 30px;
+            text-align: center;
+        }
+
+        .NavBar ul li a:hover {
+            background-color: #134149;
+
+        }
+
+        a.active,
+        a:hover {
+            background: #1b9bff;
+            transition: .5s;
+        }
+
+        .button-container {
+            margin-top: 50px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+        }
+
+        img {
+            margin-top: 30px;
+        }
+
+
+        .button {
+            display: flex;
+            flex-direction: column;
+            justify-content: top;
+            align-items: center;
+            line-height: 10px;
+            width: 450px;
+            height: 300px;
+            margin: 50px;
+            background-color: grey;
+            border-radius: 20px;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+            font-size: larger;
+        }
+
+        .button:hover {
+            background-color: #00a8c1;
+            box-shadow: 0 10px 20px #012997(0, 0, 0, 0.5);
+            transform: translateY(-30px);
+            transition: 1s;
+        }
+
+
+        .button:hover h3 {
+            color: #fff;
+        }
+
+        .button {
+            color: white;
+        }
+
+        b.button {
+            color: black;
+        }
+
+        .button:hover {
+            color: #fff;
+            background-color: #00a8c1;
+        }
+
+        .copyrihgt {
+            position: absolute;
+            color: white;
+            width: 100%;
+            top: 609px;
+            right: 0px;
+            background-color: darkslategrey;
+            line-height: 3;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="NavBar">
+            <img src="logoo.png" alt="" height="95px">
+            <ul>
+                <li><a href="Home Page.html">Home</a></li>
+                <li><a href="About us.html">About us</a></li>
+                <li><a href="https://web.facebook.com/messages/t/100002532664673">Contact
+                        us</a></li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+
+    <div class="button-container">
+
+
+        <div class="button" onclick="window.location.href='Resgistration Form.html'">
+            <img src="Home Page.jpg" width="400px" height="200">
+            <p><b>You can upload your information if you need a job</b></p>
+            </p>
+        </div>
+
+        <div class="button" onclick="window.location.href='HR services.html'">
+            <img src="HR.jpg" width="400px" height="200">
+            <p><b>You can use the HR functions from this tab</b></p>
+        </div>
+    </div>
+    <div class="copyrihgt">
+        2023 | Tanta University © HRMS Project
+    </div>
+
+</body>
+
+</html>
